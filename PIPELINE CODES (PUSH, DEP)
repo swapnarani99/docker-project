@@ -37,7 +37,7 @@ pipeline {
     stages {
         stage('check') {
             steps {
-                git 'https://github.com/RAHAMSHAIK007/dockernewproject.git'
+                git branch: 'main', url: 'https://github.com/abburimohan/docker-project.git'
             }
         }
         stage('stack') {
