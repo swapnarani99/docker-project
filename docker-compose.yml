@@ -1,0 +1,17 @@
+version: '3'
+services:
+  devops:
+    image: rammohan478/devops:latest
+    ports:
+      - "94:80"
+    deploy:
+      replicas: 3
+
+  aws:
+    image: rammohan478/aws:latest
+    ports:
+      - "95:80"
+    deploy:
+      replicas: 3
+
+ 
