@@ -1,17 +1,32 @@
 version: '3'
 services:
-  devops:
-    image: rammohan478/devops:latest
+  movies:
+    image: ramu478/aws
     ports:
-      - "94:80"
+      - "80:80"
     deploy:
       replicas: 3
 
-  aws:
-    image: rammohan478/aws:latest
+  train:
+    image: ramu478/devops
     ports:
-      - "95:80"
+      - "81:80"
     deploy:
       replicas: 3
+
+  dth:
+    image: ramu478/azure
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+
+  recharge:
+    image: ramu478/ds
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
+
 
  
