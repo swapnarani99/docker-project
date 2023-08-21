@@ -1,28 +1,28 @@
 version: '3'
 services:
   movies:
-    image: ramu478/aws
+    image: swapnarani99/movies
     ports:
       - "80:80"
     deploy:
       replicas: 3
 
   train:
-    image: ramu478/devops
+    image: swapnarani99/train
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   dth:
-    image: ramu478/azure
+    image: swapnarani99/dth
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   recharge:
-    image: ramu478/ds
+    image: swapnarani99/recharge
     ports:
       - "83:80"
     deploy:
